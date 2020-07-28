@@ -56,8 +56,16 @@
       },
       "videos": [
         {
+          "titulo": "Learn Node.js - Full Tutorial for Beginners",
+          "url": "https://www.youtube.com/watch?v=RLtyhwFtXQA"
+        },
+        {
           "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
           "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+        },
+        {
+          "titulo": "How to Build a RESTful API using Node, Express, and Mongo",
+          "url": "https://www.youtube.com/watch?v=o3ka5fYysBM"
         },
         {
           "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",

@@ -10,7 +10,7 @@ export const Title = styled.h3`
   padding: 20px;
   background: red;
   line-height: 1;
-  border-radius: 4px;
+  border-radius: 5px;
   text-shadow: 1px 1px 3px #333;
 
   @media (max-width: 800px) {

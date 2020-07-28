@@ -38,7 +38,7 @@ ContentAreaContainer.Category = styled.h1`
   display: inline-block; 
   padding: 25px;
   line-height: 1;
-  border-radius: 4px;
+  border-radius: 5px;
 
   @media (max-width: 800px) {
     display: none;
