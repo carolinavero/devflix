@@ -32,11 +32,11 @@ body {
 }
 @media (max-width: 800px) {
   .Menu {
-    height: 40px;
+    height: 60px;
     justify-content: center;
   }
   body {
-    --bodyPaddingTop: 40px;
+    --bodyPaddingTop: 60px;
     padding-top: var(--bodyPaddingTop);
   }
 }

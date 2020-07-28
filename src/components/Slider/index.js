@@ -16,6 +16,7 @@ const Container = styled.ul`
     transform: initial;
     &:before {
       font-size: 30px;
+      
     }
   }
   
@@ -35,19 +36,44 @@ export const SliderItem = styled.li`
     height: 197px;
     object-fit: cover;
   }
-`;
+  `;
+
+
+function NextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#3f84bc", borderRadius: 50 }}
+      onClick={onClick}
+    />
+  );
+}
+
+function PrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "#3f84bc", borderRadius: 50 }}
+      onClick={onClick}
+    />
+  );
+}
 
 
 const Slider = ({ children }) => (
-    <Container>
+  <Container>
         <SlickSlider {...{
-            dots: false,
-            infinite: true,
-            speed: 300,
-            centerMode: false,
-            variableWidth: true,
-            adaptiveHeight: true,
-            swipeToSlide: true
+          dots: false,
+          infinite: true,
+          speed: 300,
+          centerMode: false,
+          variableWidth: true,
+          adaptiveHeight: true,
+          swipeToSlide: true,
+          nextArrow: <NextArrow />,
+          prevArrow: <PrevArrow />
         }}
         >
             {children}
