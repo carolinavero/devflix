@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import Pagina404 from './pages/Pagina404';
 import Home from './pages/Home';
 import CadastroVideo from '../src/pages/cadastro/Video';
-
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CadastroCategoria from './pages/cadastro/Categoria';
-
-const Pagina404 = () => (<div>Erro 404 - Página não encontrada</div>)
 
 ReactDOM.render(
   <BrowserRouter>
