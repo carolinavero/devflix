@@ -33,12 +33,13 @@ function CadastroCategoria() {
       ...categorias,
       values,
     ]);
-
     setValues(initialValues);
   }
 
   useEffect(() => {
-    const URL_TOP = 'http://localhost:8080/categorias';
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://carolflix.herokuapp.com/categorias';
     fetch(URL_TOP)
       .then(async (resp) => {
         const resposta = await resp.json();
