@@ -1,6 +1,6 @@
 ## Devflix
 
-Projeto desenvolvido durante a Imersão React promovido pela Alura.
+Projeto desenvolvido durante a **Imersão React** promovido pela Alura.
 
 ## Como rodar a aplicação
 
@@ -29,5 +29,5 @@ A aplicação estará disponível na rota http://localhost:3000
 
 ## Deploy da aplicação com Vercel
 
-[Deploy no Vercel](https://devflix.vercel.app/)
+[Deploy - Vercel](https://devflix.vercel.app/)
 
