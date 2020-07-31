@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Pagina404 from './pages/Pagina404';
 import Home from './pages/Home';
-import CadastroVideo from '../src/pages/cadastro/Video';
+import CadastroVideo from './pages/cadastro/Video';
 import CadastroCategoria from './pages/cadastro/Categoria';
 
 ReactDOM.render(
@@ -17,5 +17,5 @@ ReactDOM.render(
       <Route component={Pagina404} />
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
