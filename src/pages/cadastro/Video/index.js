@@ -77,9 +77,11 @@ function CadastroVideo() {
         </Button>
       </form>
 
-      <Link to="/cadastro/categoria">
-        Cadastrar Categoria
-      </Link>
+      <div style={{ marginTop: 20 }}>
+        <Link to="/cadastro/categoria">
+          Cadastrar Categoria
+        </Link>
+      </div>
 
     </PageDefault>
   );

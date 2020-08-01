@@ -4,13 +4,14 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button ';
 import useForm from '../../../hooks/useForm';
+import TableList from '../../../components/TableList';
 
 function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
   const initialValues = {
-    name: '',
-    description: '',
-    color: '',
+    name: 'Nome da Categoria',
+    description: 'Descrição de nova categoria',
+    color: '#cccccc',
   };
 
   const { handleChange, values, clearForm } = useForm(initialValues);
@@ -68,22 +69,17 @@ function CadastroCategoria() {
             onChange={handleChange}
           />
           <Button>Cadastrar</Button>
+          <Link to="/" style={{ marginLeft: 15 }}>Cancelar</Link>
 
         </form>
 
         {categorias.length === 0 && (
         <div>
-          Loading...
+          Carregando...
         </div>
         )}
 
-        <ul>
-          {categorias.map((categoria) => (
-            <li key={`${categoria.titulo}`}>
-              {categoria.titulo}
-            </li>
-          ))}
-        </ul>
+        <TableList items={categorias} />
 
         <Link to="/">
           Ir para a Home

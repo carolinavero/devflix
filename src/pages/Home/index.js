@@ -21,7 +21,11 @@ function Home() {
   return (
     <>
       <PageDefault paddingAll={0}>
-        {dadosIniciais.length === 0 && (<div>Loading...</div>)}
+        {dadosIniciais.length === 0 && (
+          <div style={{ textAlign: 'center' }}>
+            <h1>Carregando...</h1>
+          </div>
+        )}
 
         {dadosIniciais.map((categoria, indice) => {
           if (indice === 0) {
